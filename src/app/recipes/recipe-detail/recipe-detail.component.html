@@ -1,13 +1,22 @@
 <div class="row">
-    <div class="col-xs-12">
-        <img src="" alt="" class="img-responsive">
+    <div class="col-xs-8">
+        <img src="{{myRecipe.imagePath}}" alt="No Image" style="max-height:320px;" class="img-responsive">
     </div>
 </div>
-<div class="row">
-    <div class="col-xs-12">
-        <h1>Recipe Name</h1>
+<div class="panel panel-default col-xs-8">
+    <div class="panel-body">
+        <div class="col-xs-8">
+            <h5>Recipe Name: {{myRecipe.name}}</h5>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-8" style="font-weight:bold;">
+            <u>Top Comments:</u> <em>  {{myRecipe.description}} </em>
+        </div>
     </div>
 </div>
+
+
 <div class="row">
     <div class="col-xs-12">
         <div class="btn-group">
@@ -23,11 +32,7 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-xs-12">
-        Description
-    </div>
-</div>
+
 <div class="row">
     <div class="col-xs-12">
         Ingredients
