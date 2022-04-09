@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-xs-8">
-        <img src="{{myRecipe.imagePath}}" alt="No Image" style="max-height:320px;" class="img-responsive">
+        <img src="{{myRecipe.imagePath}}" alt="No Image" style="max-height:320px; min-width: 500px;" class="img-responsive">
     </div>
 </div>
-<div class="panel panel-default col-xs-8">
+<div class="panel panel-default col-xs-9">
     <div class="panel-body">
         <div class="col-xs-8">
             <h5>Recipe Name: {{myRecipe.name}}</h5>
@@ -27,7 +27,7 @@
             <ul class="dropdown-menu">
                 <li><a (click)="addToShoppingList()" style="cursor:pointer;">To Shopping List</a></li>
                 <li><a style="cursor:pointer;" (click)="onEditRecipe()">Edit Recipe</a></li>
-                <li><a style="cursor:pointer;">Delete Recipe</a></li>
+                <li><a style="cursor:pointer;" (click)="onDeleteRecipe()" >Delete Recipe</a></li>
             </ul>
         </div>
     </div>
